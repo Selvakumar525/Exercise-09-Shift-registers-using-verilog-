@@ -82,8 +82,35 @@ end
 assign Po=temp;
 endmodule 
 ~~~
-
-
+### Parallel in Serial out(PISO):
+~~~ python
+module ex9(Clk, Parallel_In,load, Serial_Out);
+input Clk,load;
+input [3:0]Parallel_In;
+output reg Serial_Out;
+reg [3:0]tmp;
+always @(posedge Clk)
+begin
+if(load)
+tmp<=Parallel_In;
+else
+begin
+Serial_Out<=tmp[3];
+tmp<={tmp[2:0],1'b0};
+end
+end
+endmodule
+~~~
+### Parallel-In Parallel-Out(PIPO):
+module ex9(PI,Clk,PO);
+input Clk;
+input [3:0] PI;
+output reg [3:0] PO;
+always @ (posedge Clk)
+begin
+PO=PI;
+end 
+endmodule 
 
 
 ### RTL LOGIC  REGISTERS   
