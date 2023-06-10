@@ -41,18 +41,46 @@ FIGURE-04
 A Parallel in Parallel out (PIPO) shift register is used as a temporary storage device and like SISO Shift register it acts as a delay element.
 
 ### Procedure
-/* write all the steps invloved */
 
+Step 1:
+Create a new file in quartus II.
+
+Step 2:
+Module Declaration. Module should have the file name.
+
+Step 3:
+Use begin declaration to define the functionality of logic circuits.
+
+Step 4:
+Within begin use if statements.
+
+Step 5:
+At the end give endmodule.
+
+Step 6:
+Run the program and choose RTL viewer to get RTL realization.
 
 
 ### PROGRAM 
 /*
 Program for  Implementation-of Shift-registers-using-verilog-
-Developed by: 
-RegisterNumber:  
+Developed by: Selva Kumar A
+RegisterNumber: 212222110042 
 */
 
-
+###Serial-In Parallel-Out(SIPO):
+~~~ python
+module ex9(SI,Clk,Po);
+input SI,Clk;
+output [0:7]  Po;
+reg [0:7]temp;
+always @ (posedge Clk)
+begin
+temp={temp[0:6],SI};
+end
+assign Po=temp;
+endmodule 
+~~~
 
 
 
