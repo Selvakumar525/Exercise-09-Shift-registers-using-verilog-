@@ -102,6 +102,7 @@ end
 endmodule
 ~~~
 ### Parallel-In Parallel-Out(PIPO):
+~~~
 module ex9(PI,Clk,PO);
 input Clk;
 input [3:0] PI;
@@ -112,7 +113,6 @@ PO=PI;
 end 
 endmodule 
 ~~~
-
 ### RTL LOGIC  REGISTERS   
 
 
