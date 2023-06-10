@@ -62,13 +62,14 @@ Run the program and choose RTL viewer to get RTL realization.
 
 
 ### PROGRAM 
+~~~ python
 /*
 Program for  Implementation-of Shift-registers-using-verilog-
 Developed by: Selva Kumar A
 RegisterNumber: 212222110042 
 */
-
-###Serial-In Parallel-Out(SIPO):
+~~~
+### Serial-In Parallel-Out(SIPO):
 ~~~ python
 module ex9(SI,Clk,Po);
 input SI,Clk;
