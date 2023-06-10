@@ -114,6 +114,12 @@ end
 endmodule 
 ~~~
 ### RTL LOGIC  REGISTERS   
+### Parallel-In Parallel-Out(PIPO):
+![image](https://github.com/Selvakumar525/Exercise-09-Shift-registers-using-verilog-/assets/120643262/90020fa0-0d27-423e-9c15-ce88cd79fc72)
+### Serial-In Parallel-Out(SIPO):
+![image](https://github.com/Selvakumar525/Exercise-09-Shift-registers-using-verilog-/assets/120643262/02af8267-4572-4f99-8e72-5df2400d7fdd)
+### Parallel in Serial out(PISO):
+![image](https://github.com/Selvakumar525/Exercise-09-Shift-registers-using-verilog-/assets/120643262/7d06bb61-6a58-4835-ac30-2d556a0b03c2)
 
 
 
@@ -124,8 +130,14 @@ endmodule
 
 
 ### TIMING DIGRAMS FOR SHIFT REGISTERS
+### Parallel-In Parallel-Out(PIPO):
+![image](https://github.com/Selvakumar525/Exercise-09-Shift-registers-using-verilog-/assets/120643262/a0af184a-5d89-48fc-8302-47829fca46f5)
 
+### Serial-In Parallel-Out(SIPO):
+![image](https://github.com/Selvakumar525/Exercise-09-Shift-registers-using-verilog-/assets/120643262/62cfb09c-faa5-4a72-875d-487ce3f71f62)
 
+### Parallel in Serial out(PISO):
+![image](https://github.com/Selvakumar525/Exercise-09-Shift-registers-using-verilog-/assets/120643262/e80e2254-4ee5-4a9f-9d29-1ad9a4fc1910)
 
 
 
@@ -133,3 +145,4 @@ endmodule
 
 
 ### RESULTS 
+SIPO,PIPO,PISO has been implemented using verilog and validated their functionality using their functional tables.
